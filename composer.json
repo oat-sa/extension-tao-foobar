@@ -1,0 +1,31 @@
+{
+  "repositories": [{
+    "type": "composer",
+    "url": "http://packages.taocloud.org/"
+  }],
+  "homepage": "http://www.taotesting.com",
+  "license": "GPL-2.0",
+  "keywords": [
+    "tao",
+    "oat",
+    "computer-based-assessment"
+  ],
+  "name": "oat-sa/extension-tao-testtaker",
+  "description": "extension to manage testtakers ",
+  "type": "tao-extension",
+  "authors": [{
+    "name": "Open Assessment Technologies S.A.",
+    "homepage": "http://www.taotesting.com"
+  }],
+  "extra": {
+    "tao-extension-name": "taoFooBar"
+  },
+  "autoload": {
+    "psr-4": {
+      "oat\\taoFooBar\\": ""
+    }
+  },
+  "require": {
+    "oat-sa/oatbox-extension-installer": "dev-master"
+  }
+}
