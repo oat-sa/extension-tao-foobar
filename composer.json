@@ -10,8 +10,8 @@
     "oat",
     "computer-based-assessment"
   ],
-  "name": "oat-sa/extension-tao-testtaker",
-  "description": "extension to manage testtakers ",
+  "name": "oat-sa/extension-tao-foobar",
+  "description": "dummy extension for testing",
   "type": "tao-extension",
   "authors": [{
     "name": "Open Assessment Technologies S.A.",
