@@ -1,4 +1,4 @@
-odule.exports = function(grunt) {
+module.exports = function(grunt) {
     'use strict';
 
     var root        = grunt.option('root');
