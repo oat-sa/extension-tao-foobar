@@ -22,5 +22,10 @@
 define(function(){
     'use strict';
 
-    return { };
+    return {
+        'Foo' : {
+            'actions' : {
+                'index' : 'controller/Foo/index'
+            }
+    };
 });
