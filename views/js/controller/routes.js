@@ -27,5 +27,6 @@ define(function(){
             'actions' : {
                 'index' : 'controller/Foo/index'
             }
+        }
     };
 });
