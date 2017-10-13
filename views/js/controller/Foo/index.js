@@ -4,6 +4,7 @@ define([], function(){
     return {
         start : function start(){
             //foo starts
+            console.log('foo');
         }
     };
 });
