@@ -9,4 +9,8 @@ a {
     text-decoration: underline;
     background-color : white;
     border-radius: 3px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
