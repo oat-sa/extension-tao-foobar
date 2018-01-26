@@ -4,7 +4,7 @@ define([], function(){
     return {
         start : function start(){
             //foo starts
-            window.console.log('foobar baz', arguments);
+            window.console.log('foobar baz noz', arguments);
         }
     };
 });
