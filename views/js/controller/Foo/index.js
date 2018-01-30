@@ -10,6 +10,7 @@ define([], function(){
             window.console.log('Now the feature is complete');
 
             window.alert('Old school POPUP');
+            window.console.log('that was really nasty :-O');
         }
     };
 });
