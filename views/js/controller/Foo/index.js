@@ -9,7 +9,7 @@ define([], function(){
             window.console.log('That is a cool new feature');
             window.console.log('Now the feature is complete');
 
-            window.alert('Old school popup');
+            window.alert('Old school POPUP');
         }
     };
 });
