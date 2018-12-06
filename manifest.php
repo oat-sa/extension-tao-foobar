@@ -26,10 +26,10 @@ return [
     'label' => 'FooBar power extension',
     'description' => 'Dummy test extension',
     'license' => 'GPL-2.0',
-    'version' => '0.10.2',
+    'version' => '1.0.0',
     'author' => 'Open Assessment Technologies, CRP Henri Tudor',
     'requires' => [
-        'tao' => '*'
+        'tao' => '>=21.0.0'
     ],
     'models' => [
         'http://www.tao.lu/Ontologies/TAOFooBar.rdf'
