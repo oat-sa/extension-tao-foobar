@@ -25,7 +25,8 @@ define(function(){
     return {
         'Foo' : {
             'actions' : {
-                'index' : 'controller/Foo/index'
+                'index' : 'controller/Foo/index',
+                'foodex' : 'controller/Foo/foodex'
             }
         }
     };
