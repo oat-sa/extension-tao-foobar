@@ -29,7 +29,7 @@ return [
     'version' => '1.1.0',
     'author' => 'Open Assessment Technologies, CRP Henri Tudor',
     'requires' => [
-        'tao' => '>=21.0.0'
+        'tao' => '>=21.0.1'
     ],
     'models' => [
         'http://www.tao.lu/Ontologies/TAOFooBar.rdf'
