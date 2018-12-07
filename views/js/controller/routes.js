@@ -26,7 +26,8 @@ define(function(){
         'Foo' : {
             'actions' : {
                 'index' : 'controller/Foo/index',
-                'foodex' : 'controller/Foo/foodex'
+                'foodex' : 'controller/Foo/foodex',
+                'moodex' : 'controller/Foo/foodex'
             }
         }
     };
