@@ -4,7 +4,7 @@
 	<structure id="taoForce_main" name="taoForce" level="15" group="main">
 		<description />
 		<sections>
-			<section id="taoForce_main" name="taoForce" url="/taoForce/TaoForce/index" />
+			<section id="taoForce_mayTheForceBeWithYou" name="taoForce" url="/taoForce/TaoForce/mayTheForceBeWithYou" />
 		</sections>
 	</structure>
 </structures>
