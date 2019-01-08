@@ -10,19 +10,19 @@
     "oat",
     "computer-based-assessment"
   ],
-  "name": "oat-sa/extension-tao-foobar",
-  "description": "dummy extension for testing",
+  "name": "oat-sa/extension-tao-force",
+  "description": "Tao force extension",
   "type": "tao-extension",
   "authors": [{
-    "name": "Open Assessment Technologies S.A.",
+    "name": "Daniel Halasz",
     "homepage": "http://www.taotesting.com"
   }],
   "extra": {
-    "tao-extension-name": "taoFooBar"
+    "tao-extension-name": "taoForce"
   },
   "autoload": {
     "psr-4": {
-      "oat\\taoFooBar\\": ""
+      "oat\\taoForce\\": ""
     }
   },
   "require": {

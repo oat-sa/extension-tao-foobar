@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE structures SYSTEM "../doc/structures.dtd">
+<structures>
+	<structure id="taoForce_main" name="Tao Force Extension" level="15" group="main">
+		<description />
+		<sections>
+			<section id="taoForce_main" name="Template" url="/taoForce/TaoForce/displayMessage" />
+		</sections>
+	</structure>
+</structures>
