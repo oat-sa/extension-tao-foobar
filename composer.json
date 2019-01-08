@@ -1,8 +1,10 @@
 {
-  "repositories": [{
-    "type": "composer",
-    "url": "http://packages.taocloud.org/"
-  }],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.taocloud.org/"
+    }
+  ],
   "homepage": "http://www.taotesting.com",
   "license": "GPL-2.0",
   "keywords": [
@@ -10,15 +12,20 @@
     "oat",
     "computer-based-assessment"
   ],
-  "name": "oat-sa/extension-tao-foobar",
-  "description": "dummy extension for testing",
+  "name": "oat-sa/extension-force-task",
+  "description": "dummy extension for padawan testing",
   "type": "tao-extension",
-  "authors": [{
-    "name": "Open Assessment Technologies S.A.",
-    "homepage": "http://www.taotesting.com"
-  }],
+  "authors": [
+    {
+      "name": "Open Assessment Technologies S.A.",
+      "homepage": "http://www.taotesting.com"
+    },
+    {
+      "name": "Ferenc Kiss"
+    }
+  ],
   "extra": {
-    "tao-extension-name": "taoFooBar"
+    "tao-extension-name": "force-task"
   },
   "autoload": {
     "psr-4": {
