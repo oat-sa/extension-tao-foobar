@@ -24,7 +24,7 @@ namespace oat\taoForce\controller;
 /**
  * Sample controller
  *
- * @author Daniel Halasz
+ * @author Open Assessment Technologies S.A. - Daniel Halasz
  * @package taoForce
  * @license GPL-2.0
  *
