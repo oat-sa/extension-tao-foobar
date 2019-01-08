@@ -1,4 +1,4 @@
-extension-tao-testtaker
+extension-tao-force
 =======================
 
-extension to manage test takers for TAO
+Extension to manage the force (practical exercise)

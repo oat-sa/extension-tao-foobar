@@ -10,19 +10,24 @@
     "oat",
     "computer-based-assessment"
   ],
-  "name": "oat-sa/extension-tao-foobar",
-  "description": "dummy extension for testing",
+  "name": "oat-sa/extension-tao-force",
+  "description": "Tao force extension",
   "type": "tao-extension",
-  "authors": [{
+  "authors": [
+    {
     "name": "Open Assessment Technologies S.A.",
     "homepage": "http://www.taotesting.com"
-  }],
+    },
+    {
+      "name": "Jonathan VUILLEMIN"
+    }
+  ],
   "extra": {
     "tao-extension-name": "taoFooBar"
   },
   "autoload": {
     "psr-4": {
-      "oat\\taoFooBar\\": ""
+      "oat\\taoForce\\": ""
     }
   },
   "require": {
