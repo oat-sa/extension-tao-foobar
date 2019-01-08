@@ -26,7 +26,7 @@ return [
     'label' => 'Tao Force extension',
     'description' => 'Tao Force extension',
     'license' => 'GPL-2.0',
-    'version' => '1.0.0',
+    'version' => '1.4.0',
     'author' => 'Open Assessment Technologies, Jonathan VUILLEMIN',
     'requires' => [
         'tao' => '>=21.0.1'
