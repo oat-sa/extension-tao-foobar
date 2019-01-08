@@ -32,6 +32,7 @@ class TaoForce extends \tao_actions_CommonModule
 {
     public function mayTheForceBeWithYou()
     {
-        $this->setView('TaoForce/mayTheForceBeWithYou.tpl');
+        $this->setData('message', 'May the force be with you !');
+        $this->setView('mayTheForceBeWithYou.tpl');
     }
 }

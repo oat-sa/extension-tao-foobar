@@ -1,1 +1,1 @@
-May the force be with you !
+<?=get_data('message')?>
