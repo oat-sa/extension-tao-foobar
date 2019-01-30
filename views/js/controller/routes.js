@@ -27,7 +27,8 @@ define(function(){
             'actions' : {
                 'index' : 'controller/Foo/index',
                 'foodex' : 'controller/Foo/foodex',
-                'moodex' : 'controller/Foo/foodex'
+                'moodex' : 'controller/Foo/foodex',
+                'yoodex' : 'controller/Foo/foodex'
             }
         }
     };
