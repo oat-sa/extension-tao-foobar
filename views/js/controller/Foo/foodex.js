@@ -4,6 +4,12 @@ define([], function(){
     return {
         start : function start(){
             //foo starts
+
+            // if developer tool is not open in ie, console is not available on window
+            if (!window.console) {
+                return;
+            }
+
             window.console.log('foobar baz noz', arguments);
             window.console.warn('Ooops');
             window.console.log('That is a cool new feature');
