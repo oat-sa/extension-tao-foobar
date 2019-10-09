@@ -2,7 +2,7 @@ define([], function(){
     'use strict';
 
     return {
-        start : function start(){
+        start(){
             //foo starts
 
             // if developer tool is not open in ie, console is not available on window
