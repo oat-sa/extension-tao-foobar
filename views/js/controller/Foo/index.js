@@ -13,7 +13,7 @@ define([], function(){
                 console.log('Master of puppets...');
             })
             .catch(function(err){
-                console.error('Master of the space ', err);
+                window.console.error('Master of the space ', err);
             });
         }
     };
