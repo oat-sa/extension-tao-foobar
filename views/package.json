@@ -1,0 +1,13 @@
+{
+  "name": "@oat-sa/tao-foobar",
+  "version": "0.1.0",
+  "license": "GPL-2.0",
+  "description": "taoFooBar frontend modules",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oat-sa/extension-tao-foobar.git"
+  },
+  "dependencies": {
+    "npm-dummy-package": "~1.0.1"
+  }
+}
