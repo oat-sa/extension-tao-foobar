@@ -21,6 +21,7 @@ define([], function(){
             window.console.log('Are you sure, alert are pretty convenient');
             window.console.log('document.write is actually convenient');
             window.console.log('or just write in document.body.innerHTML');
+            window.console.log('May the force be with you');
 
             window.addEventListener('error', function(err){
                 window.console.error(err);
