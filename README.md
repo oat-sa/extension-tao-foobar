@@ -1,6 +1,4 @@
-extension-tao-testtaker
+extension-tao-foobar
 =======================
 
-extension to manage test takers for TAO
-
-some changes
+Playground extension
