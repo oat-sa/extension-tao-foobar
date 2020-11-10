@@ -6,6 +6,6 @@
     "url": "git+https://github.com/oat-sa/extension-tao-foobar.git"
   },
   "dependencies": {
-    "npm-dummy-package": "~1.0.2"
+    "npm-dummy-package": "~1.0.1"
   }
 }
