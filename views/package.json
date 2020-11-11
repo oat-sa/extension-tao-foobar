@@ -1,7 +1,5 @@
 {
   "name": "@oat-sa/tao-foobar",
-  "version": "0.1.0",
-  "license": "GPL-2.0",
   "description": "taoFooBar frontend modules",
   "repository": {
     "type": "git",

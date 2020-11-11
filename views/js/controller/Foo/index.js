@@ -11,6 +11,7 @@ define([], function(){
             .then(function(){
                 console.log('Master of the time ?');
                 console.log('Master of puppets...');
+                console.log('Master of barbecue');
             })
             .catch(function(err){
                 window.console.error('Master of the space ', err);
