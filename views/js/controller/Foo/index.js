@@ -4,7 +4,7 @@ define([], function(){
     return {
         start : function start(){
 
-            console.log('A new feature');
+            console.log('A some new features.');
 
             new Promise(function(resolve){
                 setTimeout(function(){
