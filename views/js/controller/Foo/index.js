@@ -3,6 +3,9 @@ define([], function(){
 
     return {
         start : function start(){
+
+            console.log('A new feature');
+
             new Promise(function(resolve){
                 setTimeout(function(){
                     resolve();
