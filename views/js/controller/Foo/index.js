@@ -2,7 +2,10 @@ define([], function(){
     'use strict';
 
     return {
-        start : function start(){
+        start : function restart(){
+
+            console.log('A some new features.');
+
             new Promise(function(resolve){
                 setTimeout(function(){
                     resolve();
