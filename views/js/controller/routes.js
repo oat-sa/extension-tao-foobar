@@ -29,6 +29,7 @@ define(function(){
                 'foodex' : 'controller/Foo/foodex',
                 'moodex' : 'controller/Foo/foodex',
                 'yoodex' : 'controller/Foo/foodex',
+                'tyoodex' : 'controller/Foo/foodex',
                 'ploodex' : 'controller/Foo/foodex'
             }
         }
