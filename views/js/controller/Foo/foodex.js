@@ -5,7 +5,7 @@ define([], function(){
         start(){
             //foo starts
 
-            // if developer tool is not open in ie, console is not available on window
+            // if developper tool is not open in ie, console is not available on window
             if (!window.console) {
                 return;
             }
