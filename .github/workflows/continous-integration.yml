@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+        - run: |
+          git fetch --unshallow --tags
+          echo $?
+          git tag --list
     - name: Check commit
       if: always()
       uses: oat-sa/conventional-commit-action@main
