@@ -12,8 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - run: git fetch --unshallow --tags
     - name: Check commit
       if: always()
-      uses: oat-sa/conventional-commit-action@main
+      uses: oat-sa/conventional-commit-action@v0.1.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
