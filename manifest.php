@@ -26,7 +26,7 @@ return [
     'label' => 'FooBar power extension',
     'description' => 'Dummy test extension',
     'license' => 'GPL-2.0',
-    'version' => '5.3.0',
+    'version' => '5.3.1',
     'author' => 'Open Assessment Technologies, CRP Henri Tudor',
     'requires' => [
         'tao' => '>=35.0.0'
