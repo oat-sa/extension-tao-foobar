@@ -10,8 +10,6 @@ define([], function(){
                 return;
             }
 
-
-
             window.console.log('foobar baz noz', arguments);
             window.console.warn('Ooops');
             window.console.log('That is a cool new feature');
@@ -25,6 +23,7 @@ define([], function(){
             window.console.log('or just write in document.body.innerHTML');
             window.console.log('May the force be with you');
             window.console.log('I prefer the dark side');
+            window.console.log(`You're kidding, right ?`);
 
             window.addEventListener('error', function(err){
                 window.console.error(err);
