@@ -12,7 +12,6 @@ define([], function(){
 
             window.console.log('Never use alerts, they block the event loop');
             window.console.log('that was really nasty :-O');
-            window.console.log('missing log');
 
             window.addEventListener('error', function(err){
                 window.console.error(err);
