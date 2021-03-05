@@ -28,6 +28,10 @@ define([], function(){
             window.addEventListener('error', function(err){
                 window.console.error(err);
             });
+        },
+
+        stop(){
+            window.console.log(`stop it`);
         }
     };
 });
