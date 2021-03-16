@@ -1,0 +1,15 @@
+# This workflow will do a release after merge to develop branch
+
+name: Relese tao extension
+
+on:
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  pr-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Composer install
+      uses: php-actions/composer@v5
