@@ -22,7 +22,6 @@ jobs:
           tools: composer:v2
         env:
           COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Prepare composer.json file
       - name: Prepare composer file
@@ -58,6 +57,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm i -g @oat-sa/tao-extension-release
       - run: |
           EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
