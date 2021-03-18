@@ -31,7 +31,7 @@ jobs:
             $composerArray["repositories"] = is_array($composerArray["repositories"]) ? $composerArray["repositories"] : [];
             $composerArray["repositories"][] = [
               "type" => "vcs",
-              "url" => "git@github.com:".$composerArray["name"].".git"
+              "url" => "https://github.com/".$composerArray["name"].".git"
             ];
             unset($composerArray["name"]);
             file_put_contents("./composer-release.json", json_encode($composerArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));'
@@ -39,8 +39,13 @@ jobs:
       # Composer Install
       - name: Install dependencies
         run: |
-          composer config -g secure-http false
+          REPO_NAME=$(jq --raw-output '."name"' composer.json)
+          EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
           COMPOSER=composer-release.json composer install --no-dev --no-interaction --prefer-source
+          cd $EXT_ID
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git remote set-url --push origin https://github.com/$REPO_NAME.git
 
       # Prepare to release
       - name: Prepare to release
