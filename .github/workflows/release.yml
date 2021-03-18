@@ -52,11 +52,14 @@ jobs:
           touch index.php
           mkdir -p config/
 
-       # Install node and do release
+       # Install node
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+
+      # Do release
+      - name: Release Tao Extension
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
