@@ -52,15 +52,14 @@ jobs:
           touch index.php
           mkdir -p config/
 
-      # Install node and do release
+       # Install node and do release
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm i -g @oat-sa/tao-extension-release
-      - run: |
+        run: |
+          npm i -g @oat-sa/tao-extension-release
           EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
           taoRelease extensionRelease --extension-to-release ${EXT_ID} --no-interactive --no-write
-
