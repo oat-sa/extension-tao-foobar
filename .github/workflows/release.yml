@@ -35,38 +35,39 @@ jobs:
             ];
             unset($composerArray["name"]);
             file_put_contents("./composer-release.json", json_encode($composerArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));'
+          pwd
 
-      # Composer Install
-      - name: Install dependencies
-        run: |
-          COMPOSER=composer-release.json composer install --no-dev --no-interaction --prefer-source
-
-      # Prepare to release
-      - name: Prepare to release
-        run: |
-          mkdir -p taoQtiItem/views/js/mathjax/
-          touch taoQtiItem/views/js/mathjax/MathJax.js
-          mkdir -p tao/views/locales/en-US/
-          echo '{"serial":"9","date":1615820392,"version":"3.3.0-9","translations":{}}' > tao/views/locales/en-US/messages.json
-          touch index.php
-          mkdir -p config/
-
-       # Install node
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-
-      # Do release
-      - name: Release Tao Extension
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm i -g @oat-sa/tao-extension-release
-          REPO_NAME=$(jq --raw-output '."name"' composer.json)
-          EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
-          cd $EXT_ID
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-          git remote set-url --push origin https://${GITHUB_TOKEN}@github.com/$REPO_NAME.git
-          taoRelease extensionRelease --extension-to-release ${EXT_ID} --no-interactive --no-write --path-to-tao '/github/workspace'
+#      # Composer Install
+#      - name: Install dependencies
+#        run: |
+#          COMPOSER=composer-release.json composer install --no-dev --no-interaction --prefer-source
+#
+#      # Prepare to release
+#      - name: Prepare to release
+#        run: |
+#          mkdir -p taoQtiItem/views/js/mathjax/
+#          touch taoQtiItem/views/js/mathjax/MathJax.js
+#          mkdir -p tao/views/locales/en-US/
+#          echo '{"serial":"9","date":1615820392,"version":"3.3.0-9","translations":{}}' > tao/views/locales/en-US/messages.json
+#          touch index.php
+#          mkdir -p config/
+#
+#       # Install node
+#      - name: Use Node.js 12.x
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: 12.x
+#
+#      # Do release
+#      - name: Release Tao Extension
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        run: |
+#          npm i -g @oat-sa/tao-extension-release
+#          REPO_NAME=$(jq --raw-output '."name"' composer.json)
+#          EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
+#          cd $EXT_ID
+#          git config --global user.name github-actions
+#          git config --global user.email github-actions@github.com
+#          git remote set-url --push origin https://${GITHUB_TOKEN}@github.com/$REPO_NAME.git
+#          taoRelease extensionRelease --extension-to-release ${EXT_ID} --no-interactive --no-write --path-to-tao '/github/workspace'
