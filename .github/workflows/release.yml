@@ -21,7 +21,7 @@ jobs:
           php-version: '7.2'
           tools: composer:v2
         env:
-          COMPOSER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMPOSER_TOKEN: ${{ secrets.GH_TOKEN }}
 
       # Prepare composer.json file
       - name: Prepare composer file
@@ -60,7 +60,7 @@ jobs:
       # Do release
       - name: Release Tao Extension
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npm i -g @oat-sa/tao-extension-release
           REPO_NAME=$(jq --raw-output '."name"' composer.json)
