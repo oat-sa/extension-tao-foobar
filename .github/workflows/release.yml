@@ -39,13 +39,7 @@ jobs:
       # Composer Install
       - name: Install dependencies
         run: |
-          REPO_NAME=$(jq --raw-output '."name"' composer.json)
-          EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
           COMPOSER=composer-release.json composer install --no-dev --no-interaction --prefer-source
-          cd $EXT_ID
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git remote set-url --push origin https://github.com/$REPO_NAME.git
 
       # Prepare to release
       - name: Prepare to release
@@ -69,5 +63,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm i -g @oat-sa/tao-extension-release
+          REPO_NAME=$(jq --raw-output '."name"' composer.json)
           EXT_ID=$(jq --raw-output '.extra."tao-extension-name"' composer.json)
-          taoRelease extensionRelease --extension-to-release ${EXT_ID} --no-interactive --no-write
+          cd $EXT_ID
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git remote set-url --push origin https://${GITHUB_TOKEN}@github.com/$REPO_NAME.git
+          taoRelease extensionRelease --extension-to-release ${EXT_ID} --no-interactive --no-write --path-to-tao '/github/workspace'
