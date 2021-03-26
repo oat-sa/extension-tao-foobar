@@ -18,6 +18,6 @@ jobs:
     - name: Release
       uses: oat-sa/extension-release-action@v0
       env:
-        DEFAULT_BRANCH: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         github_token: ${{ secrets.GH_TOKEN }}
