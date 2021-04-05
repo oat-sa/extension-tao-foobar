@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Release
-      uses: oat-sa/extension-release-action@v1
+      uses: oat-sa/extension-release-action@517a08d75b8e6fd1412208365509f5ba7f22ffcf
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
