@@ -1,5 +1,10 @@
 {
-  "repositories": [],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:oat-sa/extension-tao-test-preview-ui-loader.git"
+    }
+  ],
   "homepage": "http://www.taotesting.com",
   "license": "GPL-2.0",
   "keywords": [
