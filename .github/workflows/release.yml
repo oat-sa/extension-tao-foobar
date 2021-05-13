@@ -3,21 +3,20 @@
 name: Relese Tao extension
 
 on:
-  pull_request:
-    branches:
-      - develop
-    types: [closed]
+  push
+
 jobs:
   auto-release:
-    if: github.event.pull_request.merged == true
     name: Automated Tao extension release
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Release
-      uses: oat-sa/extension-release-action@517a08d75b8e6fd1412208365509f5ba7f22ffcf
+      uses: oat-sa/extension-release-action@0ff35255338f757f41f870a0cd1d9ddced502fc8
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.BUILD_NPM_TOKEN }}
       with:
         github_token: ${{ secrets.GH_TOKEN }}
+        npm_token: ${{ secrets.BUILD_NPM_TOKEN }}
