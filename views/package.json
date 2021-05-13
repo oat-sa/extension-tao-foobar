@@ -6,7 +6,8 @@
     "url": "git+https://github.com/oat-sa/extension-tao-foobar.git"
   },
   "dependencies": {
-    "npm-dummy-package": "~1.0.1",
-    "eve": "git://github.com/adobe-webplatform/eve.git#eef80ed"
+    "@oat-sa-private/tao-test-runner-qtinui": "5.4.0",
+    "eve": "git://github.com/adobe-webplatform/eve.git#eef80ed",
+    "npm-dummy-package": "~1.0.1"
   }
 }
