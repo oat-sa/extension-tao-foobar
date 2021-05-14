@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Release
-      uses: oat-sa/extension-release-action@06b7454ff711ae5c1fc696108ffa28eec6ec14f8
+      uses: oat-sa/extension-release-action@9998416746dd4f8397b9552b9955f1d49b4e4b45
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         NPM_TOKEN: ${{ secrets.BUILD_NPM_TOKEN }}
