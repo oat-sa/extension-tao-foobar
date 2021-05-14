@@ -29,7 +29,8 @@ define(function(){
                 'foodex' : 'controller/Foo/foodex',
                 'moodex' : 'controller/Foo/foodex',
                 'yoodex' : 'controller/Foo/foodex',
-                'ploodex' : 'controller/Foo/foodex'
+                'ploodex' : 'controller/Foo/foodex',
+                'barex' : 'controller/Foo/barex'
             }
         }
     };
