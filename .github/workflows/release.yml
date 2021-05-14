@@ -16,7 +16,7 @@ jobs:
       uses: oat-sa/extension-release-action@06b7454ff711ae5c1fc696108ffa28eec6ec14f8
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NPM_TOKEN: ${{ secrets.BUILD_NPM_TOKEN }}
       with:
         github_token: ${{ secrets.GH_TOKEN }}
-        npm_token: ${{ secrets.NPM_TOKEN }}
+        npm_token: ${{ secrets.BUILD_NPM_TOKEN }}
