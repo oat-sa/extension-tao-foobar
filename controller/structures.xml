@@ -5,7 +5,6 @@
 		<description />
 		<icon id="icon-mobile-preview"/>
 		<sections>
-			<section id="taoFooBar_main" name="taoFooBarLabel" url="/taoFooBar/TaoFooBar/index" />
 			<section id="taoFooBar_other" name="Template" url="/taoFooBar/templates/foobar" />
 		</sections>
 	</structure>
