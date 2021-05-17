@@ -1,4 +1,5 @@
 <?php
+
 namespace oat\taoFooBar\controller;
 
 /**
@@ -27,26 +28,28 @@ namespace oat\taoFooBar\controller;
  * @license GPL-2.0
  *
  */
-class TaoFooBar extends \tao_actions_CommonModule {
+class TaoFooBar extends \tao_actions_CommonModule
+{
 
     /**
      * initialize the services
      */
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
     }
 
     /**
      * A possible entry point to foobar
      */
-    public function index() {
+    public function index()
+    {
         $this->response = $this->getPsrResponse()->withBody(\GuzzleHttp\Psr7\stream_for(__('Hello World')));
     }
 
-    public function templateExample() {
+    public function templateExample()
+    {
         $this->setData('author', 'Open Assessment Technologies SA');
         $this->setView('templates/foobar.tpl');
     }
-    
 }
-

@@ -18,20 +18,19 @@
  *
  */
 
-
 //@see http://forge.taotesting.com/projects/tao/wiki/Front_js
-define(function(){
+define(function () {
     'use strict';
 
     return {
-        'Foo' : {
-            'actions' : {
-                'index' : 'controller/Foo/index',
-                'foodex' : 'controller/Foo/foodex',
-                'moodex' : 'controller/Foo/foodex',
-                'yoodex' : 'controller/Foo/foodex',
-                'ploodex' : 'controller/Foo/foodex',
-                'barex' : 'controller/Foo/barex'
+        Foo: {
+            actions: {
+                index: 'controller/Foo/index',
+                foodex: 'controller/Foo/foodex',
+                moodex: 'controller/Foo/foodex',
+                yoodex: 'controller/Foo/foodex',
+                ploodex: 'controller/Foo/foodex',
+                barex: 'controller/Foo/barex'
             }
         }
     };
