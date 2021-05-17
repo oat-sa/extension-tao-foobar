@@ -1,24 +1,22 @@
-define([], function(){
+define([], function () {
     'use strict';
 
     return {
-        start(){
-            
+        start() {
             if (!window.console) {
                 return;
             }
 
             window.console.warn('Ooops');
-            window.console.log('My first tao Code')
+            window.console.log('My first tao code');
 
-            window.addEventListener('error', function(err){
-                window.console.error('oops error throwned',err);
+            window.addEventListener('error', function (err) {
+                window.console.error('oops error', err);
             });
         },
 
-        stop(){
+        stop() {
             window.console.log(`stop it`);
         }
     };
-
 });

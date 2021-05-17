@@ -47,5 +47,6 @@ class TaoFooBar extends \tao_actions_CommonModule {
         $this->setData('author', 'Open Assessment Technologies SA');
         $this->setView('templates/foobar.tpl');
     }
+    
 }
 
