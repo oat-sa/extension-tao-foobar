@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE structures SYSTEM "../doc/structures.dtd">
+<structures>
+	<structure id="taoFooBar_main" name="taoFooBarLabel" level="15" group="main">
+		<description />
+		   <icon id="icon-mobile-preview"/> 
+		<sections>
+			<section id="taoFooBar_main" name="taoFooBarLabel" url="/taoFooBar/TaoFooBar/index" />
+			<section id="taoFooBar_other" name="Template" url="/taoFooBar/templates/foobar" />
+		</sections>
+	</structure>
+</structures>
