@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE structures SYSTEM "../doc/structures.dtd">
 <structures>
-	<structure id="taoFooBar_main" name="taoFooBarLabel" level="15" group="main">
+	<structure id="taoFooBar_main" name="tao FooBar Label" level="15" group="main">
 		<description />
 		<icon id="icon-mobile-preview"/>
 		<sections>
-			<section id="taoFooBar_other" name="Template" url="/taoFooBar/templates/foobar" />
+			<section id="taoFooBar_other" name="Foo Bar Tab" url="/taoFooBar/templates/foobar" />
 		</sections>
 	</structure>
 </structures>
