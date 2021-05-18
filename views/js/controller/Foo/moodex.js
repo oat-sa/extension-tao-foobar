@@ -1,9 +1,8 @@
-define([], function(){
+define([], function () {
     'use strict';
 
     return {
-        start(){
-
+        start() {
             //foo starts
             window.console.warn('Ooops');
             window.console.log('That is a cool new feature');
@@ -12,7 +11,7 @@ define([], function(){
             window.console.log('Never use alerts, they block the event loop');
             window.console.log('that was really nasty :-O');
 
-            window.addEventListener('error', function(err){
+            window.addEventListener('error', function (err) {
                 window.console.error(err);
             });
         }

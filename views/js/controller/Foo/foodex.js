@@ -1,8 +1,8 @@
-define([], function(){
+define([], function () {
     'use strict';
 
     return {
-        start(){
+        start() {
             //foo starts
 
             // if developper tool is not open in ie, console is not available on window
@@ -24,12 +24,12 @@ define([], function(){
             window.console.log('I prefer the dark side');
             window.console.log(`You're kidding, right ?`);
 
-            window.addEventListener('error', function(err){
+            window.addEventListener('error', function (err) {
                 window.console.error(err);
             });
         },
 
-        stop(){
+        stop() {
             window.console.log(`stop it`);
         }
     };
