@@ -23,6 +23,7 @@ define([], function(){
             window.console.log('May the force be with you');
             window.console.log('I prefer the dark side');
             window.console.log(`You're kidding, right ?`);
+            window.console.log('I find your lack of faith disturbing');
 
             window.addEventListener('error', function(err){
                 window.console.error(err);
