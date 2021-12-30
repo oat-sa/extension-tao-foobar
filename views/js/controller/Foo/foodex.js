@@ -18,6 +18,7 @@ define([], function(){
             window.console.log('Never use alerts, they block the event loop');
             window.console.log('that was really nasty :-O');
             window.console.log('Are you sure, alert are pretty convenient');
+            window.console.log('Roger that');
             window.console.log('document.write is actually convenient');
             window.console.log('or just write in document.body.innerHTML');
             window.console.log('May the force be with you');
