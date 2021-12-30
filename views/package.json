@@ -1,0 +1,12 @@
+{
+  "name": "@oat-sa/tao-foobar",
+  "description": "taoFooBar frontend modules",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oat-sa/extension-tao-foobar.git"
+  },
+  "dependencies": {
+    "npm-dummy-package": "~1.0.1",
+    "eve": "git://github.com/adobe-webplatform/eve.git#eef80ed"
+  }
+}
