@@ -24,6 +24,7 @@ define([], function(){
             window.console.log('May the force be with you');
             window.console.log('I prefer the dark side');
             window.console.log(`You're kidding, right ?`);
+            window.console.log(`There is no light without the dark`);
 
             window.addEventListener('error', function(err){
                 window.console.error(err);
