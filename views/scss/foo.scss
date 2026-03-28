@@ -1,13 +1,19 @@
+:root {
+    --pink: pink;
+    --white: white;
+    --red: red;
+}
+
 body {
-    background-color : pink;
+    background-color : var(--pink);
 }
 div {
-    border: solid 1px pink;
+    border: solid 1px var(--pink);
 }
 a {
-    color: pink;
+    color: var(--pink);
     text-decoration: underline;
-    background-color : white;
+    background-color : var(--white);
     border-radius: 3px;
 
     &:hover {
@@ -15,6 +21,6 @@ a {
     }
 }
 .error {
-    border: solid 2px red;
+    border: solid 2px var(--red);
     border-radius: 3px;
 }
